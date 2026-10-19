@@ -1,0 +1,19 @@
+drug,risk_group,first_flagged,sustained_from,final_cases,final_ror
+TOFACITINIB,Thrombosis / embolism,2019q2,2019q2,1911,1.7
+TOFACITINIB,Herpes zoster,2018q1,2018q1,2353,2.85
+TOFACITINIB,Serious infection,2018q1,,3446,0.74
+TOFACITINIB,Malignancy,,,1851,0.79
+TOFACITINIB,Heart attack / stroke,2018q1,2018q1,1695,1.41
+TOFACITINIB,Raised cholesterol,2018q1,2018q1,2313,4.65
+UPADACITINIB,Thrombosis / embolism,2019q4,2019q4,1872,2.54
+UPADACITINIB,Herpes zoster,2019q3,2019q3,1178,2.15
+UPADACITINIB,Serious infection,2019q3,,3005,0.99
+UPADACITINIB,Malignancy,2022q1,2023q3,2362,1.55
+UPADACITINIB,Heart attack / stroke,2019q4,2019q4,1207,1.51
+UPADACITINIB,Raised cholesterol,2020q2,2020q2,791,2.38
+BARICITINIB,Thrombosis / embolism,2018q3,2018q3,557,8.59
+BARICITINIB,Herpes zoster,2018q3,2018q3,170,3.36
+BARICITINIB,Serious infection,2018q3,2019q1,444,1.61
+BARICITINIB,Malignancy,2019q4,2019q4,350,2.52
+BARICITINIB,Heart attack / stroke,2018q3,2021q2,151,2.05
+BARICITINIB,Raised cholesterol,2019q1,2022q4,71,2.3

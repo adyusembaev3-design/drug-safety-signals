@@ -1,0 +1,37 @@
+drug,risk_group,background,cases,drug_cases,ror,ci_low,ci_high,signal
+TOFACITINIB,Thrombosis / embolism,comparators,1911,111216,1.7,1.62,1.79,YES
+TOFACITINIB,Herpes zoster,comparators,2353,111216,2.85,2.72,3.0,YES
+TOFACITINIB,Serious infection,comparators,3446,111216,0.74,0.72,0.77,no
+TOFACITINIB,Malignancy,comparators,1851,111216,0.79,0.76,0.83,no
+TOFACITINIB,Heart attack / stroke,comparators,1695,111216,1.41,1.33,1.48,YES
+TOFACITINIB,Raised cholesterol,comparators,2313,111216,4.65,4.41,4.9,YES
+TOFACITINIB,Thrombosis / embolism,all other drugs,1911,111216,1.62,1.55,1.7,YES
+TOFACITINIB,Herpes zoster,all other drugs,2353,111216,8.02,7.69,8.37,YES
+TOFACITINIB,Serious infection,all other drugs,3446,111216,1.16,1.13,1.21,YES
+TOFACITINIB,Malignancy,all other drugs,1851,111216,0.88,0.84,0.92,no
+TOFACITINIB,Heart attack / stroke,all other drugs,1695,111216,1.46,1.39,1.53,YES
+TOFACITINIB,Raised cholesterol,all other drugs,2313,111216,9.7,9.29,10.12,YES
+UPADACITINIB,Thrombosis / embolism,comparators,1872,73659,2.54,2.41,2.67,YES
+UPADACITINIB,Herpes zoster,comparators,1178,73659,2.15,2.02,2.29,YES
+UPADACITINIB,Serious infection,comparators,3005,73659,0.99,0.95,1.03,no
+UPADACITINIB,Malignancy,comparators,2362,73659,1.55,1.49,1.62,YES
+UPADACITINIB,Heart attack / stroke,comparators,1207,73659,1.51,1.42,1.61,YES
+UPADACITINIB,Raised cholesterol,comparators,791,73659,2.38,2.2,2.57,YES
+UPADACITINIB,Thrombosis / embolism,all other drugs,1872,73659,2.43,2.32,2.54,YES
+UPADACITINIB,Herpes zoster,all other drugs,1178,73659,5.84,5.51,6.2,YES
+UPADACITINIB,Serious infection,all other drugs,3005,73659,1.55,1.5,1.61,YES
+UPADACITINIB,Malignancy,all other drugs,2362,73659,1.74,1.67,1.81,YES
+UPADACITINIB,Heart attack / stroke,all other drugs,1207,73659,1.57,1.48,1.66,YES
+UPADACITINIB,Raised cholesterol,all other drugs,791,73659,4.7,4.38,5.05,YES
+BARICITINIB,Thrombosis / embolism,comparators,557,6870,8.59,7.86,9.39,YES
+BARICITINIB,Herpes zoster,comparators,170,6870,3.36,2.88,3.92,YES
+BARICITINIB,Serious infection,comparators,444,6870,1.61,1.46,1.77,YES
+BARICITINIB,Malignancy,comparators,350,6870,2.52,2.26,2.81,YES
+BARICITINIB,Heart attack / stroke,comparators,151,6870,2.05,1.74,2.41,YES
+BARICITINIB,Raised cholesterol,comparators,71,6870,2.3,1.82,2.91,YES
+BARICITINIB,Thrombosis / embolism,all other drugs,557,6870,8.18,7.5,8.92,YES
+BARICITINIB,Herpes zoster,all other drugs,170,6870,8.93,7.67,10.4,YES
+BARICITINIB,Serious infection,all other drugs,444,6870,2.52,2.29,2.77,YES
+BARICITINIB,Malignancy,all other drugs,350,6870,2.81,2.52,3.12,YES
+BARICITINIB,Heart attack / stroke,all other drugs,151,6870,2.12,1.8,2.49,YES
+BARICITINIB,Raised cholesterol,all other drugs,71,6870,4.47,3.54,5.64,YES
