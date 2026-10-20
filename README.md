@@ -103,3 +103,8 @@ Tests: `python -m pytest`
 - **Comparator choice.** Rituximab was removed from the comparators because it treats lymphoma, which inflated the malignancy background.
 - **Time to onset** uses only cases with valid start and event dates and does not account for censoring.
 - Disproportionality methods detect signals. They do not establish causation.
+
+
+## Real-time extension
+A Kafka + Prometheus/Grafana streaming pipeline that detects emerging JAK inhibitor
+safety signals as reports arrive. See [streaming/](streaming/README.md).

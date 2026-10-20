@@ -3,7 +3,7 @@
   "title": "FAERS Live Signal Monitor",
   "uid": "faers-live",
   "schemaVersion": 39,
-  "time": {"from": "now-30m", "to": "now"},
+  "time": {"from": "now-15m", "to": "now"},
   "refresh": "5s",
   "panels": [
     {"id": 1, "type": "timeseries", "title": "Reports processed per second",
@@ -23,19 +23,20 @@
      "gridPos": {"h": 4, "w": 12, "x": 12, "y": 4},
      "datasource": {"type": "prometheus", "uid": "${DS_PROMETHEUS}"},
      "targets": [{"refId": "A", "expr": "reports_processed_total"}]},
-    {"id": 5, "type": "timeseries", "title": "PRR by drug-event pair (red line = signal threshold 2.0)",
-     "gridPos": {"h": 10, "w": 24, "x": 0, "y": 8},
+    {"id": 5, "type": "timeseries", "title": "PRR of top emerging signals (red line = threshold 2.0)",
+     "gridPos": {"h": 16, "w": 24, "x": 0, "y": 8},
      "datasource": {"type": "prometheus", "uid": "${DS_PROMETHEUS}"},
+     "options": {"legend": {"displayMode": "table", "placement": "right", "calcs": ["lastNotNull"], "showLegend": true}},
      "fieldConfig": {"defaults": {
         "custom": {"thresholdsStyle": {"mode": "line"}},
         "thresholds": {"mode": "absolute", "steps": [{"color": "green", "value": null}, {"color": "red", "value": 2}]}},
         "overrides": []},
      "targets": [{"refId": "A", "expr": "prr", "legendFormat": "{{drug}} - {{event}}"}]},
-    {"id": 6, "type": "bargauge", "title": "Cases per drug-event pair",
-     "gridPos": {"h": 12, "w": 24, "x": 0, "y": 18},
+    {"id": 6, "type": "bargauge", "title": "Cases per emerging signal",
+     "gridPos": {"h": 14, "w": 24, "x": 0, "y": 24},
      "datasource": {"type": "prometheus", "uid": "${DS_PROMETHEUS}"},
      "options": {"orientation": "horizontal", "displayMode": "gradient",
                  "reduceOptions": {"calcs": ["lastNotNull"], "fields": "", "values": false}},
-     "targets": [{"refId": "A", "expr": "sort_desc(case_count)", "legendFormat": "{{drug}} - {{event}}"}]}
+     "targets": [{"refId": "A", "expr": "sort_desc(case_count)", "legendFormat": "{{drug}} - {{event}}", "instant": true}]}
   ]
 }
