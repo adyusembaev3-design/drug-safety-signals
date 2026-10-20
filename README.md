@@ -53,14 +53,30 @@ Full tables are in [`docs/results/`](docs/results/).
 
 ```
 FDA FAERS quarterly files
-  -> src/download.py, sanitize.py, load.py       raw tables in DuckDB
-  -> src/clean.py                                cases, case_ps, case_reaction
-  -> src/signals.py                              PRR, ROR, chi-square, IC025
-  -> src/validate.py, backtest.py, onset.py      validation, replay, time to onset
-  -> src/export_app_data.py                      app_data/ for the dashboard
-  -> src/upload_azure.py                         Azure Blob Storage (Data Lake Gen2)
-  -> Dockerfile                                  Streamlit + Plotly image
-  -> Azure Container Registry -> Azure Container Apps
+        |
+        v
+Load      src/download.py, sanitize.py, load.py   ->  raw tables in DuckDB
+        |
+        v
+Clean     src/clean.py                            ->  cases, case_ps, case_reaction
+        |
+        v
+Score     src/signals.py                          ->  PRR, ROR, chi-square, IC025
+        |
+        v
+Validate  src/validate.py, backtest.py, onset.py  ->  validation, replay, time to onset
+        |
+        v
+Export    src/export_app_data.py                  ->  app_data/ for the dashboard
+        |
+        v
+Upload    src/upload_azure.py                     ->  Azure Blob Storage (Data Lake Gen2)
+        |
+        v
+Package   Dockerfile                              ->  Streamlit + Plotly image
+        |
+        v
+Deploy    Azure Container Registry                ->  Azure Container Apps (public dashboard)
 ```
 
 **Azure components**
