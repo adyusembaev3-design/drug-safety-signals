@@ -8,3 +8,4 @@ scipy==1.18.1
 statsmodels==0.15.0
 streamlit==1.66.0
 tqdm==4.70.1
+azure-storage-blob==12.31.0
