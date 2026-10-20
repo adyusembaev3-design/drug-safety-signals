@@ -1,0 +1,15 @@
+services:
+  kafka:
+    image: apache/kafka:3.8.0
+    ports: ["9092:9092"]
+
+  prometheus:
+    image: prom/prometheus:latest
+    ports: ["9090:9090"]
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    extra_hosts: ["host.docker.internal:host-gateway"]
+
+  grafana:
+    image: grafana/grafana:latest
+    ports: ["3000:3000"]
